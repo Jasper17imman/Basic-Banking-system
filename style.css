@@ -1,0 +1,139 @@
+nes (142 sloc) 2.32 KB
+*{
+	margin:0;
+	padding:0;
+	
+}
+body
+{
+	background-image: url("https://www.doughroller.net/wp-content/uploads/201…/largest-banks-in-the-world-648x364-c-default.jpg");
+	font-family:sans-serif;
+	
+	
+	
+}
+#nav-bar
+{
+	background-color:#FF4500;
+	position: sticky;
+	top:0;
+	z-index:10;
+	float: center;
+}
+.nav-link:hover{
+    background-color:rgb(10, 49, 134);
+}
+.navbar
+{
+
+    padding: 0 !important;
+}
+navbar-brand img
+{
+	height:40px;
+	padding-left:20px;
+}
+.navbar-nav li
+{
+	padding: 0 10px;
+}
+.navbar-nav li a
+{
+color:#fff !important;
+font-weight:600;
+float:right;
+text-align:left;
+}
+.fa-bars
+{
+	color:#fd0932;
+	font-size:30p !important;
+}
+.navbar-toggler
+{
+	outline:none !important;
+}
+/*---banner section--*/
+#main
+{
+	text-align: center;
+background-color:rgb(175, 75, 122);
+ background-image: url("data:image/png;base64,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");
+ background-origin: content-box;
+ height: 100%;
+ width: 100%;
+ 
+color:#fff;
+padding-top:10%;	
+}
+.container h1 img{
+	padding-bottom: 10px;
+}
+
+
+/*---service section---*/
+#features1
+{
+    
+	text-align: center;
+	padding: 10% 15%;
+}
+ #features
+ {
+     text-align: center;
+	 padding: 10% 15%; background-image: url('https://securionpay.com/wp-content/uploads/2016/08/What-is-an-issuing-bank.png');
+
+ }
+ .features1 h3
+{
+	padding:5px;
+	margin-top:25px;
+	text-transform:uppercase;
+}
+
+.features h3
+{
+	padding:5px;
+	margin-top:25px;
+	text-transform:uppercase;
+}
+
+
+#features .btn-primary
+{
+	box-shadow:none;
+	padding:10px 25px;
+	border:none;
+	align-content: center;
+	background-image:linear-gradient(to right,#9cba17,#5ed7e7)
+}
+/* Action*/
+  #action{
+    background-color:#FFD700;
+    padding: 5% 10%;
+    text-align: center;
+    line-height: 1.5;
+    color: #00FF00;
+  }
+  .main{
+    font-size: 3rem;
+    line-height: 1.5;
+    padding: 10px 0px;
+  }
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* footer */
+#footer{
+	
+        background-color: #FFD700;
+    color:#00008B;
+    padding: 5% 10%;
+    text-align: center;
+}
